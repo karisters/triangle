@@ -12,7 +12,7 @@ try {
         throw new \Exception('Wrong arguments number passed');
     }
 
-    $sidesCollection = (new Triangle\SidesCollection())
+    $sidesCollection = (new Triangle\SidesCollection)
         ->add(new Triangle\Side($argv[1]))
         ->add(new Triangle\Side($argv[2]))
         ->add(new Triangle\Side($argv[3]));
